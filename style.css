@@ -1,0 +1,124 @@
+/* to get rid of the default padding and margin */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.title{
+    margin-left: 30%; /* to make it in the centre*/
+}
+
+
+.body{
+    background: rgba(109, 96, 83, 0.91);
+    font-family: "Architects Daughter";
+    font-size: 25px;
+}
+
+.container{
+    width: 95%;
+    margin: auto; /*to make it in the centre */
+}
+
+
+.container0{
+  margin-left: 62%;
+  position: absolute;
+  margin-top: -3.4%;
+}
+
+
+
+.container1{
+    margin-left: 20%;
+    margin-top: -4%;
+}
+
+.container2{
+    display: flex;
+    justify-content: flex-start; /*to make the notes start from the left*/
+    flex-wrap: wrap; /*to make a new row below the above notes if there is no more space*/
+    margin-top: 20px;
+    margin-left: 5%;
+
+}
+
+.container3{
+    /* display: none; */
+    position: absolute;
+    top: 26%;
+    left: 40%;
+}
+
+textarea{
+    box-shadow: 20px 20px 20px 7px rgb(68, 54, 54);
+    outline: 8px ridge rgba(115, 23, 155, 0.6);
+    border-radius: 2rem;
+    width: 275px;
+    height: 275px;
+    padding: 40px 25px 25px 25px;
+}
+
+#check-icon{
+    position: absolute;
+    right: 10%;
+    top: 4%;
+    color: rgb(4, 109, 27);
+}
+
+#x-icon{
+    position: absolute;
+    right: 3%;
+    top: 4%;
+    color: rgb(255, 0, 0);
+}
+
+
+
+  .custom-context-menu {
+    width: 200px;
+    box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.3);
+
+    position: fixed;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 500ms ease;
+  }
+
+  .custom-context-menu.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .custom-context-menu ul li a {
+    text-decoration: none;
+    padding: 20px 32px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    background: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+    border-left: 4px solid transparent;
+    transition: all 400ms ease;
+  }
+
+  .custom-context-menu ul li a:hover {
+    background: #f1faee;
+    border-left: 4px solid rgb(15, 15, 15);
+  }
+
+  .custom-context-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+#button1,#button2{
+  width: 200px;
+  text-align: left;
+}
